@@ -1,0 +1,59 @@
+@import url('/style.css');
+
+.SectHeader3HTML {
+  height: 100%;
+  width: 50%;
+  padding: 0px;
+  gap: var(--pint-gap-s);
+  gap: 10px;
+}
+.divBot {
+  gap: 10px;
+  width: 40%;
+}
+.divBot > button {
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .divBot {
+    gap: 6px;
+    width: 45%;
+  }
+}
+
+@media (max-width: 1104px) {
+  .ul > li {
+    font-size: 13px;
+  }
+  .divBot {
+    padding: 0px;
+    gap: 0px;
+  }
+  .divBot > button {
+    scale: 0.9;
+  }
+}
+
+@media (max-width: 1066px) {
+  .ul > li {
+    display: none;
+  }
+  .ul {
+    display: none;
+  }
+  .divNav {
+    width: 0px;
+  }
+  .divBot {
+    gap: 10px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 780px) {
+  .SectHeader3HTML {
+    height: 30px;
+    margin-bottom: 0;
+  }
+}

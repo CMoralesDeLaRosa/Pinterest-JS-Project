@@ -1,0 +1,45 @@
+@import url('/style.css');
+
+.divInput {
+  width: 18%;
+  height: 100%;
+}
+
+.divInput > input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--pint-color-1);
+  border: 1px solid var(--pint-color-2);
+  font-size: 15px;
+  padding: var(--pint-padding-xs);
+  color: var(--pint-color-3);
+}
+
+.divInput > input:focus {
+  border: 2px solid var(--pint-color-4);
+  outline: none;
+}
+
+@media (max-width: 1300px) {
+  .divInput {
+    width: 15%;
+  }
+
+  .divInput > input {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1066px) {
+  .divInput {
+    width: 150px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .divInput {
+    width: 250px;
+  }
+}

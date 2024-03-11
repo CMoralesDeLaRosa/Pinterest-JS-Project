@@ -1,0 +1,53 @@
+@import url('/style.css');
+
+.divFooter {
+  width: 100%;
+  height: 50px;
+  background-color: var(--pint-color-1);
+  border: 0.5px solid var(--pint-color-2);
+}
+
+.divFooter > ul {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.divFooter > ul > li {
+  color: var(--pint-color-3);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.divFooter > ul > li:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+  .divFooter > ul > li {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1086px) {
+  .divFooter {
+    height: 80px;
+  }
+}
+
+@media (max-width: 611px) {
+  .divFooter {
+    height: 110px;
+  }
+}
+
+@media (max-width: 410px) {
+  .divFooter {
+    height: 140px;
+  }
+}

@@ -1,0 +1,99 @@
+@import url('/style.css');
+
+.SectMain {
+  height: 550px;
+  width: 98%;
+  margin: auto;
+}
+.divImg {
+  height: 100%;
+  width: 50%;
+}
+.divImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-fit: cover;
+}
+
+.divText {
+  height: 100%;
+  width: 50%;
+  background-color: var(--pint-color-5);
+  gap: 40px;
+  flex-direction: column;
+}
+
+.divText > h3 {
+  color: var(--pint-color-4);
+  width: 60%;
+  font-size: 55px;
+  text-align: center;
+}
+.divText > p {
+  color: var(--pint-color-4);
+  font-size: 22px;
+  text-align: center;
+  width: 60%;
+}
+
+.divText > button {
+  cursor: pointer;
+}
+
+@media (max-width: 869px) {
+  .SectMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    height: 750px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .divImg {
+    height: 50%;
+    width: 100%;
+  }
+  .divText {
+    height: 50%;
+    width: 100%;
+    background-color: var(--pint-color-5);
+    gap: 40px;
+    flex-direction: column;
+  }
+  .divText > h3 {
+    font-size: 45px;
+  }
+  .divText > p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 801px) {
+  .SectMain {
+    max-height: 750px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 611px) {
+  .divText > h3 {
+    font-size: 30px;
+  }
+  .divText > p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 410px) {
+  .divText > h3 {
+    width: 80%;
+  }
+  .divText > p {
+    width: 80%;
+  }
+}

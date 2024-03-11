@@ -1,0 +1,19 @@
+@import url('/style.css');
+
+.divImage {
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+.divImage > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.divImage:hover {
+  transform: scale(0.9);
+}

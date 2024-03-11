@@ -1,0 +1,67 @@
+@import url('/style.css');
+
+.SectHeader1HTML {
+  height: 100%;
+  width: 30%;
+  padding: var(--pint-padding-s);
+  gap: var(--pint-gap-s);
+  gap: 30px;
+}
+
+.divImgLogo {
+  width: 30%;
+  height: 100%;
+}
+
+.divImgLogo > img {
+  height: 30px;
+}
+
+.divNav {
+  width: 50%;
+  height: 100%;
+}
+
+.ul {
+  gap: 20px;
+}
+
+.ul > li {
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+}
+.ul > li:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1086px) {
+  .SectHeader1HTML {
+    height: 100%;
+    width: 30%;
+    padding: var(--pint-padding-s);
+    gap: 20px;
+  }
+
+  .divImgLogo > img {
+    height: 25px;
+  }
+}
+
+@media (max-width: 1066px) {
+  .divNav {
+    width: 0px;
+  }
+}
+
+@media (max-width: 780px) {
+  .SectHeader1HTML {
+    height: 30px;
+  }
+
+  .divImgLogo > img {
+    height: 40px;
+  }
+}
